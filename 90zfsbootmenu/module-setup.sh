@@ -146,6 +146,7 @@ install() {
   inst_simple "${moddir}/zfsbootmenu-preview.sh" "/libexec/zfsbootmenu-preview" || _ret=$?
   inst_simple "${moddir}/zfsbootmenu-input.sh" "/libexec/zfsbootmenu-input" || _ret=$?
   inst_simple "${moddir}/zfsbootmenu-help.sh" "/libexec/zfsbootmenu-help" || _ret=$?
+  inst_simple "${moddir}/zfsbootmenu-diff-viewer.sh" "/libexec/zdiff" || _ret=$?
   inst_simple "${moddir}/zfsbootmenu-func-wrapper.sh" "/libexec/zfunc" || _ret=$?
   inst_simple "${moddir}/zfs-chroot.sh" "/bin/zfs-chroot" || _ret=$?
   inst_simple "${moddir}/zfsbootmenu.sh" "/bin/zfsbootmenu" || _ret=$?
